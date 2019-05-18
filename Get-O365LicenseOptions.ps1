@@ -83,6 +83,7 @@ foreach($user in $allUsers)
                 UserPrincipalName = $user.UserPrincipalName
                 Status = "User is Licensed"
                 AccountSku = $accountSkuID
+                UsageLocation = $user.UsageLocation
                 EnabledLicenses = $enabledLicenses
                 DisabledLicenses = $disabledLicenses
                 PendingProvisioning = $pendingProvisioning
@@ -102,6 +103,7 @@ foreach($user in $allUsers)
             UserPrincipalName = $user.UserPrincipalName
             Status = "User is NOT Licensed"
             AccountSku = ""
+            UsageLocation = ""
             EnabledLicenses = ""
             DisabledLicenses = ""
             PendingProvisioning = ""
